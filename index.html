@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заповнюй та відправляй</title>
+    <style>
+     
+        body {
+            font-family: "Times New Roman", Times, serif; 
+            margin: 20px;
+            color: #000;
+        }
+        
+        h2 {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+ 
+        fieldset {
+            border: 1px solid #888;
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        legend {
+            padding: 0 5px;
+        }
+        
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+        
+        .form-row label {
+            display: inline-block;
+            width: 150px; 
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 200px;
+            padding: 3px;
+        }
+        
+        textarea {
+            width: 300px;
+            height: 60px;
+            padding: 3px;
+            resize: both; 
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Заповнюй та відправляй</h2>
+    <p class="subtitle">і ми обов'язково зателефонуємо</p>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Контактна інформація</legend>
+            <div class="form-row">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-row">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональна інформація</legend>
+            <div class="form-row">
+                <label for="birthplace">Місце народження</label>
+                <input type="text" id="birthplace" name="birthplace">
+            </div>
+            <div class="form-row">
+                <label for="birthdate">Дата народження</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Освіта</legend>
+            <textarea id="education" name="education"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Досвід роботи</legend>
+            <textarea id="experience" name="experience"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Особисті якості</legend>
+            <textarea id="qualities" name="qualities"></textarea>
+        </fieldset>
+
+        <button type="submit">Відправити</button>
+
+    </form>
+
+</body>
+</html>
